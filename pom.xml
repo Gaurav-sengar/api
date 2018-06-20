@@ -73,6 +73,15 @@
       </snapshotRepository>
    </distributionManagement>
 
+   <repositories>
+      <repository>
+         <id>jitpack.io</id>
+         <url>https://jitpack.io</url>
+      </repository>
+   </repositories>
+
+
+
    <!-- ********************************************** -->
    <!-- ****************** PROFILES ****************** -->
    <!-- ********************************************** -->
@@ -253,6 +262,13 @@
          <version>${mockito.version}</version>
          <scope>test</scope>
       </dependency>
+         <!--JITPACK-->
+      <dependency>
+         <groupId>com.github.Gaurav-sengar</groupId>
+         <artifactId>api</artifactId>
+         <version>v1.0</version>
+      </dependency>
+
    </dependencies>
 
    <!-- ********************************************** -->
