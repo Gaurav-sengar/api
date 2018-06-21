@@ -24,6 +24,9 @@
 
 package com.devnagri;
 
+import com.devnagri.services.DevnagriConfiguration;
+import com.devnagri.services.MainClass;
+
 /**
  * Greeter class.
  * <p>
@@ -49,6 +52,7 @@ public final class Greeter {
      * @return a greeting
      */
     public String sayHello() {
+        DevnagriConfiguration devnagriConfiguration = new DevnagriConfiguration(System.getProperty("user-dir")+"/.devnagri.yml");
         return "Hello World!";
     }
 
